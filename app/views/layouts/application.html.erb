@@ -11,7 +11,10 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -20,8 +23,12 @@
 
     <header id="header">
       <div class="logo">
-        <%= link_to image_tag("perkycrow_logo.png"), root_path %>
+        <%= link_to image_tag("perkycrow_logo.png"), root_path, title: 'PerkyCrow Logo', alt: 'A crow with a hat and a monocle' %>
       </div>
+
+      <h1 class="tagline">
+        Tales through <strong>indie</strong> games
+      </h1>
     </header>
 
 

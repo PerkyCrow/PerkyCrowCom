@@ -1,24 +1,37 @@
 body {
-    background-color: #f5f5f5;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #b0aba5;
     font-size: 18px;
+    color: #030303;
+    font-family: 'Yomogi', cursive;
+}
+
+
+strong {
+    font-weight: bold;
 }
 
 
 #header {
     .logo {
-        margin: 0 auto;
-        max-width: 300px;
+        margin: 1em auto 0 auto;
+        max-width: 15em;
 
         img {
             width: 100%;
         }
+    }
+
+    .tagline {
+        text-align: center;
+        font-size: 1.25em;
+        margin: 1em auto;
+        font-family: 'Yomogi', cursive;
     }
 }
 
 
 #main {
     .container {
-        padding: 0 15px;
+
     }
 }
