@@ -26,6 +26,10 @@ strong {
         margin: 1em auto 0 auto;
         max-width: 15em;
 
+        @include mobile {
+            max-width: 12em;
+        }
+
         img {
             width: 100%;
         }
@@ -36,6 +40,10 @@ strong {
         font-size: 1.25em;
         margin: 1em auto;
         color: #2e4e54;
+
+        @include mobile {
+            font-size: 1em;
+        }
     }
 }
 
@@ -47,6 +55,10 @@ strong {
         margin: 1em auto;
         margin-bottom: 2em;
         font-family: 'Cinzel', serif;
+
+        @include mobile {
+            font-size: 1.5em;
+        }
     }
 
     .projects {
@@ -92,6 +104,10 @@ strong {
                     margin-bottom: 0.5em;
                     font-family: 'Cinzel', serif;
                     color: #2e4e54;
+
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -99,6 +115,10 @@ strong {
                 margin-top: 1.5em;
                 text-align: right;
                 color: #665447;
+
+                @include mobile {
+                    text-align: center;
+                }
             }
         }
     }
