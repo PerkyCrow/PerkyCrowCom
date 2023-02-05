@@ -123,3 +123,20 @@ strong {
         }
     }
 }
+
+
+#footer {
+    text-align: center;
+    margin: 8em auto 4em auto;
+    max-width: 600px;
+    font-size: 0.8em;
+    color: #665447;
+
+    a {
+        color: #4b7179;
+    }
+
+    a:hover {
+        color: #2e4e54;
+    }
+}
