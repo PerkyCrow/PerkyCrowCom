@@ -139,4 +139,23 @@ strong {
     a:hover {
         color: #2e4e54;
     }
+
+    .social {
+        margin-bottom: 1em;
+
+        a {
+            opacity: 0.5;
+            display: inline-block;
+            margin: 0 0.5em;
+            transition: opacity 0.2s ease-in-out;
+
+            img {
+                width: 3em;
+            }
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+    }
 }
