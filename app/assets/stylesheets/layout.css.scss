@@ -1,8 +1,16 @@
+@mixin mobile {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+
 body {
-    background-color: #b0aba5;
+    background-color: #bcb3ac;
     font-size: 18px;
-    color: #030303;
-    font-family: 'Yomogi', cursive;
+    color: #1f1e1e;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
 }
 
 
@@ -12,6 +20,8 @@ strong {
 
 
 #header {
+    margin-bottom: 3em;
+
     .logo {
         margin: 1em auto 0 auto;
         max-width: 15em;
@@ -25,13 +35,71 @@ strong {
         text-align: center;
         font-size: 1.25em;
         margin: 1em auto;
-        font-family: 'Yomogi', cursive;
+        color: #2e4e54;
     }
 }
 
 
 #main {
-    .container {
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        margin: 1em auto;
+        margin-bottom: 2em;
+        font-family: 'Cinzel', serif;
+    }
 
+    .projects {
+        max-width: 800px;
+        margin: 0 auto;
+
+        @include mobile {
+            width: auto;
+        }
+
+        .card {
+            display: flex;
+            margin-bottom: 3em;
+
+            @include mobile {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .image {
+                width: 30%;
+                @include mobile {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .description {
+                width: 70%;
+                box-sizing: border-box;
+                padding: 0.5em 1em;
+                text-align: justify;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 0.5em;
+                    font-family: 'Cinzel', serif;
+                    color: #2e4e54;
+                }
+            }
+
+            .actions {
+                margin-top: 1.5em;
+                text-align: right;
+                color: #665447;
+            }
+        }
     }
 }
