@@ -67,6 +67,7 @@ strong {
 
         @include mobile {
             width: auto;
+            margin: 0.5em;
         }
 
         h3 {
@@ -138,6 +139,10 @@ strong {
     max-width: 600px;
     font-size: 0.8em;
     color: #665447;
+
+    @include mobile {
+        margin: 4em 0.5em 2em 0.5em;
+    }
 
     a {
         color: #4b7179;
