@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
+  get '/legal_notice', to: 'pages#legal_notice'
+
   root "pages#home"
 end

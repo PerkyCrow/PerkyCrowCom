@@ -61,13 +61,31 @@ strong {
         }
     }
 
-    .projects {
+    section {
         max-width: 800px;
         margin: 0 auto;
 
         @include mobile {
             width: auto;
         }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            font-family: 'Cinzel', serif;
+            color: #2e4e54;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin-bottom: 2em;
+        }
+    }
+
+    .projects {
 
         .card {
             display: flex;
@@ -97,17 +115,6 @@ strong {
 
                 @include mobile {
                     width: 100%;
-                }
-
-                h3 {
-                    font-size: 1.5em;
-                    margin-bottom: 0.5em;
-                    font-family: 'Cinzel', serif;
-                    color: #2e4e54;
-
-                    @include mobile {
-                        text-align: center;
-                    }
                 }
             }
 
@@ -157,5 +164,9 @@ strong {
         a:hover {
             opacity: 1;
         }
+    }
+
+    p {
+        margin-bottom: 1em;
     }
 }
