@@ -20,14 +20,16 @@ strong {
 
 
 #header {
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 
     .logo {
         margin: 1em auto 0 auto;
-        max-width: 15em;
+        width: 15em;
+        height: 15em;
 
         @include mobile {
-            max-width: 12em;
+            width: 12em;
+            height: 12em;
         }
 
         img {
@@ -49,28 +51,29 @@ strong {
 
 
 #main {
-    h2 {
-        text-align: center;
-        font-size: 2em;
-        margin: 1em auto;
-        margin-bottom: 2em;
-        font-family: 'Cinzel', serif;
 
-        @include mobile {
-            font-size: 1.5em;
-        }
-    }
+    // h2 {
+    //     text-align: center;
+    //     font-size: 2em;
+    //     margin: 1em auto;
+    //     margin-bottom: 2em;
+    //     font-family: 'Cinzel', serif;
+
+    //     @include mobile {
+    //         font-size: 1.5em;
+    //     }
+    // }
 
     section {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 0 auto 3em auto;
 
         @include mobile {
             width: auto;
             margin: 0.5em;
         }
 
-        h3 {
+        h2 {
             font-size: 1.5em;
             margin-bottom: 0.5em;
             font-family: 'Cinzel', serif;
@@ -84,6 +87,10 @@ strong {
         ul {
             margin-bottom: 2em;
         }
+    }
+
+    .hero {
+
     }
 
     .projects {

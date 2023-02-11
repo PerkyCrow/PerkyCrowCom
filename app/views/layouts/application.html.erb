@@ -12,48 +12,20 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand:wght@400;600&display=swap', 'data-turbo-track': 'reload' %>
     <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
 
-    <header id="header">
-      <div class="logo">
-        <%= link_to image_tag('perkycrow_logo.png', alt: 'PerkyCrow logo'), root_path %>
-      </div>
-
-      <h1 class="tagline">
-        telling tales through <strong>indie games</strong>
-      </h1>
-    </header>
+    <%= render "shared/header" %>
 
     <div id="main">
       <%= yield %>
     </div>
 
-    <footer id="footer">
-
-      <div class="social">
-        <%= link_to image_tag('icon_twitter.png', alt: 'Twitter logo'), 'https://twitter.com/perkycrow1', target: '_blank' %>
-        <%= link_to image_tag('icon_github.png', alt: 'GitHub logo'), 'https://github.com/Perky-Crow', target: '_blank' %>
-        <%= link_to image_tag('icon_instagram.png', alt: 'Instagram logo'), 'https://www.instagram.com/perkycrow/', target: '_blank' %>
-        <%= link_to image_tag('icon_discord.png', alt: 'Discord logo'), 'https://discord.gg/ppTB595Yec', target: '_blank' %>
-      </div>
-
-      <p>This website does not use cookies and doesn't retain any of your data, not even analytics.</p>
-
-      <p>
-        <%= link_to "Legal notice", legal_notice_path %> |
-        <%= link_to "Source code", "https://github.com/Perky-Crow/perkycrow_com", target: '_blank' %>
-      </p>
-
-    </footer>
-
+    <%= render "shared/footer" %>
 
   </body>
 </html>
