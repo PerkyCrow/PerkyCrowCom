@@ -18,6 +18,12 @@ strong {
     font-weight: bold;
 }
 
+small {
+    font-size: 0.75em;
+    line-height: 1;
+    opacity: 0.75;
+}
+
 
 #header {
     margin-bottom: 5em;
@@ -78,6 +84,17 @@ strong {
             margin-bottom: 0.5em;
             font-family: 'Cinzel', serif;
             color: #2e4e54;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        h3 {
+            font-size: 1.25em;
+            margin-bottom: 0;
+            font-family: 'Cinzel', serif;
+            color: #4e3d31;
 
             @include mobile {
                 text-align: center;
