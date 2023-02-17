@@ -6,154 +6,139 @@
 
 
 body {
-    background-color: #dad1ca;
-    font-size: 18px;
-    color: #1f1e1e;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.6;
+  background-color: #dad1ca;
+  font-size: 18px;
+  color: #1f1e1e;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
 }
 
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+
 small {
-    font-size: 0.75em;
-    line-height: 1;
-    opacity: 0.75;
+  font-size: 0.75em;
+  line-height: 1;
+  opacity: 0.75;
 }
 
 
 #header {
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 
-    .logo {
-        margin: 1em auto 0 auto;
-        width: 15em;
-        height: 15em;
+  .logo {
+    margin: 1em auto 0 auto;
+    width: 15em;
+    height: 15em;
 
-        @include mobile {
-            width: 12em;
-            height: 12em;
-        }
-
-        img {
-            width: 100%;
-        }
+    @include mobile {
+      width: 12em;
+      height: 12em;
     }
 
-    .tagline {
-        text-align: center;
-        font-size: 1.25em;
-        margin: 1em auto;
-        color: #2e4e54;
-
-        @include mobile {
-            font-size: 1em;
-        }
+    img {
+      width: 100%;
     }
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 1.25em;
+    margin: 1em auto;
+    color: #2e4e54;
+
+    @include mobile {
+      font-size: 1em;
+    }
+  }
 }
 
 
 #main {
 
-    // h2 {
-    //     text-align: center;
-    //     font-size: 2em;
-    //     margin: 1em auto;
-    //     margin-bottom: 2em;
-    //     font-family: 'Cinzel', serif;
+  section {
+    max-width: 800px;
+    margin: 0 auto 3em auto;
 
-    //     @include mobile {
-    //         font-size: 1.5em;
-    //     }
-    // }
+    @include mobile {
+      width: auto;
+      margin: 0.5em;
+    }
 
-    section {
-        max-width: 800px;
-        margin: 0 auto 3em auto;
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      font-family: 'Cinzel', serif;
+      color: #2e4e54;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    h3 {
+      font-size: 1.25em;
+      margin-bottom: 0;
+      font-family: 'Cinzel', serif;
+      color: #4e3d31;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    ul {
+      margin-bottom: 2em;
+    }
+  }
+
+  .projects {
+
+    .card {
+      display: flex;
+      margin-bottom: 3em;
+
+      @include mobile {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .image {
+        width: 30%;
+        @include mobile {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .description {
+        width: 70%;
+        box-sizing: border-box;
+        padding: 0.5em 1em;
+        text-align: justify;
 
         @include mobile {
-            width: auto;
-            margin: 0.5em;
+          width: 100%;
         }
+      }
 
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 0.5em;
-            font-family: 'Cinzel', serif;
-            color: #2e4e54;
+      .actions {
+        margin-top: 1.5em;
+        text-align: right;
+        color: #4e3d31;
 
-            @include mobile {
-                text-align: center;
-            }
+        @include mobile {
+          text-align: center;
         }
-
-        h3 {
-            font-size: 1.25em;
-            margin-bottom: 0;
-            font-family: 'Cinzel', serif;
-            color: #4e3d31;
-
-            @include mobile {
-                text-align: center;
-            }
-        }
-
-        ul {
-            margin-bottom: 2em;
-        }
+      }
     }
-
-    .hero {
-
-    }
-
-    .projects {
-
-        .card {
-            display: flex;
-            margin-bottom: 3em;
-
-            @include mobile {
-                width: 100%;
-                flex-direction: column;
-            }
-
-            .image {
-                width: 30%;
-                @include mobile {
-                    width: 100%;
-                }
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .description {
-                width: 70%;
-                box-sizing: border-box;
-                padding: 0.5em 1em;
-                text-align: justify;
-
-                @include mobile {
-                    width: 100%;
-                }
-            }
-
-            .actions {
-                margin-top: 1.5em;
-                text-align: right;
-                color: #4e3d31;
-
-                @include mobile {
-                    text-align: center;
-                }
-            }
-        }
-    }
+  }
 }
 
 
@@ -165,37 +150,37 @@ small {
     color: #4e3d31;
 
     @include mobile {
-        margin: 4em 0.5em 2em 0.5em;
+      margin: 4em 0.5em 2em 0.5em;
     }
 
     a {
-        color: #2e4e54;
+      color: #2e4e54;
     }
 
     a:hover {
-        color: #172d30;
+      color: #172d30;
     }
 
     .social {
-        margin-bottom: 1em;
+      margin-bottom: 1em;
 
-        a {
-            opacity: 0.5;
-            display: inline-block;
-            margin: 0 0.5em;
-            transition: opacity 0.2s ease-in-out;
+      a {
+        opacity: 0.5;
+        display: inline-block;
+        margin: 0 0.5em;
+        transition: opacity 0.2s ease-in-out;
 
-            img {
-                width: 3em;
-            }
+        img {
+          width: 3em;
         }
+      }
 
-        a:hover {
-            opacity: 1;
-        }
+      a:hover {
+        opacity: 1;
+      }
     }
 
     p {
-        margin-bottom: 1em;
+      margin-bottom: 1em;
     }
 }
