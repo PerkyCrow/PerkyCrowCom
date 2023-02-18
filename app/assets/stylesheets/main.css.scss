@@ -26,6 +26,22 @@ small {
 }
 
 
+.error {
+  text-align: center;
+  p {
+    margin-bottom: 1em;
+  }
+
+  .illustration {
+    text-align: center;
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
+
+
 #header {
   margin-bottom: 5em;
 
