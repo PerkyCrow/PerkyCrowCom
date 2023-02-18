@@ -38,6 +38,17 @@ small {
       max-width: 60%;
     }
   }
+
+  @include mobile {
+    .end {
+      display: none;
+    }
+    .illustration {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
 }
 
 
