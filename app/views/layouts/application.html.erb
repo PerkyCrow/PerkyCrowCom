@@ -7,6 +7,17 @@
     <meta name="keywords" content="<%= page_keywords %>">
     <meta name="author" content="PerkyCrow">
 
+    <% if page_url %>
+      <meta property="og:url" content="<%= page_url %>">
+    <% end %>
+    <meta property="og:title" content="<%= page_title %>">
+    <meta property="og:description" content="<%= page_description %>">
+    <% if page_image %>
+      <meta property="og:image" content="<%= page_image %>">
+    <% end %>
+
+    <meta priority="og:site_name" content="PerkyCrow">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

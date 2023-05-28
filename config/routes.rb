@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   get '/500', to: 'errors#internal_server'
   get '/422', to: 'errors#unprocessable'
   get '/406', to: 'errors#unacceptable'
-  get '/legal_notice', to: 'pages#legal_notice'
+
+  get '/legal-notice',   to: 'pages#legal_notice', as: 'legal_notice'
+  get '/the-mistbrewer', to: 'pages#mistbrewer', as: 'mistbrewer'
+
+  get 'sitemap', to: 'pages#sitemap', format: :xml, as: 'sitemap'
 
   root "pages#home"
 end

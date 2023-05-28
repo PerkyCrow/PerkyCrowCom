@@ -58,12 +58,12 @@ small {
 
   .logo {
     margin: 1em auto 0 auto;
-    width: 15em;
-    height: 15em;
+    width: 14em;
+    height: 14em;
 
     @include mobile {
-      width: 12em;
-      height: 12em;
+      width: 11em;
+      height: 11em;
     }
 
     img {
@@ -119,6 +119,87 @@ small {
 
     ul {
       margin-bottom: 2em;
+    }
+
+    &.game_page {
+      h2 {
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 15em;
+        }
+      }
+
+      .screenshot {
+        margin: 3em auto;
+        text-align: center;
+
+        img {
+          width: 100%;
+          box-sizing: border-box;
+          border: 0.25em solid #2d231b;
+          border-radius: 0.1em;
+        }
+      }
+
+      .visual {
+        margin: 3em auto;
+        text-align: center;
+
+        img {
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+
+      h3 {
+        margin-top: 3em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+        padding: 0 2.5em;
+      }
+
+      ul {
+        margin-bottom: 1em;
+        padding: 0 2.5em;
+
+        li {
+          margin-bottom: 1em;
+          line-height: 1.6;
+        }
+      }
+
+      .join_the_alpha {
+        text-align: center;
+        margin: 3em;
+
+        a {
+          display: inline-block;
+          background: #2e4e55;
+          padding: 0.5em 2em;
+          border-radius: 0.25em;
+          color: #dad1ca;
+          font-weight: bold;
+          text-decoration: none;
+          transition: background-color 0.2s ease-in-out;
+
+          strong {
+            font-weight: bold;
+            font-size: 1.5em;
+          }
+        }
+
+        a:hover {
+          background: #172d30;
+        }
+      }
     }
   }
 

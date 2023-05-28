@@ -6,10 +6,11 @@
     <%= link_to image_tag('icon_discord.png', alt: 'Discord logo'), 'https://discord.gg/ppTB595Yec', target: '_blank' %>
   </div>
 
-  <p>This website does not use cookies and doesn't retain any of your data, not even analytics.</p>
+  <p>This website doesn't retain any of your data, not even analytics.</p>
 
   <p>
     <%= link_to "Legal notice", legal_notice_path %> |
-    <%= link_to "Source code", "https://github.com/Perky-Crow/perkycrow_com", target: '_blank' %>
+    <%= link_to "Source code", "https://github.com/Perky-Crow/perkycrow_com", target: '_blank' %> |
+    <%= link_to "Sitemap", sitemap_path(format: :xml) %>
   </p>
 </footer>

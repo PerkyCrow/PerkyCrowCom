@@ -5,5 +5,11 @@ class PagesController < ApplicationController
 
   def legal_notice
   end
-  
+
+  def sitemap
+  end
+
+  def mistbrewer
+  end
+
 end

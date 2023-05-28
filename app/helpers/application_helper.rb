@@ -14,4 +14,12 @@ module ApplicationHelper
     content_for?(:keywords) ? content_for(:keywords) : "indie games, game development, game design, game art, game music, game sound, game programming, dreamless, mistbrewer, undeadjs"
   end
 
+  def page_image
+    content_for(:image)
+  end
+
+  def page_url
+    content_for(:url)
+  end
+
 end
