@@ -1,0 +1,90 @@
+
+@import 'mixins';
+
+
+.devise {
+
+  h2 {
+    text-align: center;
+  }
+
+  form.new_user {
+    max-width: 450px;
+    margin: 0 auto 2em auto;
+    padding: 2em;
+    background-color: #f5f2f1;
+    border-radius: 0.25em;
+  }
+  
+  form.new_user .field {
+    margin-bottom: 1.5em;
+  }
+
+  form.new_user label {
+    display: block;
+    color: #2e4e54;
+  }
+
+  form.new_user em {
+    display: block;
+    font-size: 0.8em;
+  }
+
+  form.new_user input {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  form.new_user input[type="email"],
+  form.new_user input[type="password"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #bac9cb;
+    border-radius: 0.25em;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  form.new_user input[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+  
+  form.new_user .actions {
+    text-align: center;
+  }
+  
+  form.new_user input[type="submit"] {
+    @include button;
+  }
+
+  .check_box_field {
+    display: flex;
+    align-items: center;
+  }
+
+  .devise_links {
+    text-align: center;
+    margin-top: 1em;
+    color: #4e3d31;
+
+    a {
+      color: #2e4e54;
+
+      &:hover {
+        color: #172d30;
+      }
+    }
+  }
+
+
+  /* Responsive styles */
+  @include mobile {
+    form.new_user {
+      padding: 1em;
+    }
+  
+    form.new_user .field {
+      margin-bottom: 1em;
+    }
+  }
+}
+

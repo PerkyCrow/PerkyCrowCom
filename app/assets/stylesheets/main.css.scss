@@ -1,9 +1,5 @@
-@mixin mobile {
-    @media (max-width: 600px) {
-        @content;
-    }
-}
 
+@import 'mixins';
 
 body {
   background-color: #dad1ca;
@@ -181,23 +177,7 @@ small {
         margin: 3em;
 
         a {
-          display: inline-block;
-          background: #2e4e55;
-          padding: 0.5em 2em;
-          border-radius: 0.25em;
-          color: #dad1ca;
-          font-weight: bold;
-          text-decoration: none;
-          transition: background-color 0.2s ease-in-out;
-
-          strong {
-            font-weight: bold;
-            font-size: 1.5em;
-          }
-        }
-
-        a:hover {
-          background: #172d30;
+          @include button;
         }
       }
     }
@@ -243,17 +223,7 @@ small {
         color: #4e3d31;
 
         a {
-          background: #2e4e55;
-          padding: 0.5em 2em;
-          border-radius: 0.25em;
-          color: #dad1ca;
-          font-weight: bold;
-          text-decoration: none;
-          transition: background-color 0.2s ease-in-out;
-        }
-
-        a:hover {
-          background: #172d30;
+          @include button;
         }
 
         @include mobile {

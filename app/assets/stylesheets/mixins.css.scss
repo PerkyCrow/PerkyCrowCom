@@ -1,0 +1,29 @@
+@mixin mobile {
+  @media (max-width: 600px) {
+      @content;
+  }
+}
+
+
+@mixin button {
+  font-family: 'Quicksand', sans-serif;
+  background: #2e4e55;
+  color: #dad1ca;
+  font-weight: bold;
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1em;
+  text-decoration: none;
+
+  &:hover {
+    background: #172d30;
+  }
+
+  strong {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
