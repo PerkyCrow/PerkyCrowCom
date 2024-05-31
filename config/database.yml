@@ -1,16 +1,18 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
   <<: *default
-  database: storage/development.sqlite3
+  database: perkycrow_development
 
 test:
   <<: *default
-  database: storage/test.sqlite3
+  database: perkycrow_test
 
 production:
   <<: *default
-  database: storage/production.sqlite3
+  database: perkycrow_production
+  username: perkycrow
+  password: <%= ENV["DATABASE_URL"] %>

@@ -20,7 +20,7 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
-gem "sqlite3", "~> 1.4"
+gem "pg", "~> 1.5.6"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
