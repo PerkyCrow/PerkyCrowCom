@@ -22,6 +22,15 @@ small {
 }
 
 
+a {
+  color: #2e4e54;
+
+  &:hover {
+    color: #172d30;
+  }
+}
+
+
 .error {
   text-align: center;
   p {
@@ -244,14 +253,6 @@ small {
 
     @include mobile {
       margin: 4em 0.5em 2em 0.5em;
-    }
-
-    a {
-      color: #2e4e54;
-    }
-
-    a:hover {
-      color: #172d30;
     }
 
     .social {
