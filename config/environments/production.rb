@@ -94,4 +94,22 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+
+  if ENV['SENDGRID_USERNAME'].present? && ENV['SENDGRID_APIKEY'].present?
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.sendgrid.net',
+      port:                 587,
+      domain:               'perkycrow.com',
+      user_name:            ENV['SENDGRID_USERNAME'],
+      password:             ENV['SENDGRID_APIKEY'],
+      authentication:       :plain,
+      enable_starttls_auto: true
+    }
+  else
+    Rails.logger.warn "SendGrid environment variables are not set. Skipping Action Mailer configuration."
+  end
+  
+  config.action_mailer.default_url_options = { host: 'perkycrow.com' }
+
 end
