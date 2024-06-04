@@ -2,5 +2,6 @@
  *= require reset
  *= require main
  *= require devise
+ *= require flash
  *= require_self
  */

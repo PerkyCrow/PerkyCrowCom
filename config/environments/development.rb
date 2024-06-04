@@ -73,4 +73,21 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+
+  if ENV['SENDGRID_USERNAME'].present? && ENV['SENDGRID_APIKEY'].present?
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.sendgrid.net',
+      port:                 587,
+      domain:               'perkycrow.com',
+      user_name:            ENV['SENDGRID_USERNAME'],
+      password:             ENV['SENDGRID_APIKEY'],
+      authentication:       :plain,
+      enable_starttls_auto: true
+    }
+  else
+    puts "SendGrid environment variables are not set. Skipping Action Mailer configuration."
+  end
+  
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

@@ -36,3 +36,5 @@
 
 .DS_Store
 config/application.yml
+app/javascript/node_modules
+node_modules

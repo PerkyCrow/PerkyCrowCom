@@ -1,0 +1,30 @@
+.flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  z-index: 1000;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.flash_alert {
+  background-color: #c4b2a5;
+  color: #563d3d;
+}
+
+.flash_notice {
+  background-color: #b2c4a5;
+  color: #44563d;
+}
+
+.flash .close {
+  cursor: pointer;
+  font-size: 1.2em;
+}
