@@ -214,13 +214,20 @@ a {
 
       .image {
         width: 30%;
-        @include mobile {
-          width: 100%;
-        }
+        text-align: center;
 
         img {
           width: 100%;
         }
+
+        @include mobile {
+          width: 100%;
+
+          img {
+            width: 80%;
+          }
+        }
+
       }
 
       .description {
@@ -249,40 +256,62 @@ a {
       }
     }
   }
+
+  #legal_notice {
+
+    h2, h3 {
+      text-align: left;
+      small {
+        display: block;
+        margin-bottom: 1em;
+
+        &::first-letter {
+          font-size: 0.25em;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 1.5em;
+    }
+  
+  }
 }
 
 
 #footer {
-    text-align: center;
-    margin: 8em auto 4em auto;
-    max-width: 600px;
-    font-size: 0.8em;
-    color: #4e3d31;
+  text-align: center;
+  margin: 8em auto 4em auto;
+  max-width: 600px;
+  font-size: 0.8em;
+  color: #4e3d31;
 
-    @include mobile {
-      margin: 4em 0.5em 2em 0.5em;
-    }
+  @include mobile {
+    margin: 4em 0.5em 2em 0.5em;
+  }
 
-    .social {
-      margin-bottom: 1em;
+  .social {
+    margin-bottom: 1em;
 
-      a {
-        opacity: 0.5;
-        display: inline-block;
-        margin: 0 0.5em;
-        transition: opacity 0.2s ease-in-out;
+    a {
+      opacity: 0.5;
+      display: inline-block;
+      margin: 0 0.5em;
+      transition: opacity 0.2s ease-in-out;
 
-        img {
-          width: 3em;
-        }
-      }
-
-      a:hover {
-        opacity: 1;
+      img {
+        width: 3em;
       }
     }
 
-    p {
-      margin-bottom: 1em;
+    a:hover {
+      opacity: 1;
     }
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
 }
+
+
