@@ -12,6 +12,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+
+  @include mobile {
+    background: #dad1ca;
+  }
 }
 
 
