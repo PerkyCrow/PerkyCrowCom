@@ -107,6 +107,8 @@ p, li, h1, h2, h3 {
     max-width: 800px;
     margin: 0 auto 3em auto;
 
+
+
     @include mobile {
       width: auto;
       margin: 0.5em;
@@ -215,7 +217,6 @@ p, li, h1, h2, h3 {
       padding: 1em;
       box-sizing: border-box;
       box-shadow: 2em -2em 2em -2em rgba(42, 52, 60, 0.25);
-      // background: linear-gradient(0, rgba(197, 183, 183, 0.5) 0%, rgba(218, 209, 202, 1) 100%);
 
       @include mobile {
         width: 100%;
@@ -323,5 +324,4 @@ p, li, h1, h2, h3 {
     margin-bottom: 1em;
   }
 }
-
 

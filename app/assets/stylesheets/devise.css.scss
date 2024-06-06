@@ -14,6 +14,45 @@
     padding: 2em;
     background-color: #f5f2f1;
     border-radius: 0.25em;
+
+    position: relative;
+    border: 2px solid #2c343b;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: -12%;
+      left: -8%;
+      background-image: asset-url('ornament_top_left.png');
+      background-position: left top;
+      background-size: contain;
+    }
+
+    &::after {
+      bottom: -11%;
+      right: -22.5%;
+      background-image: url('ornament_bottom_right.png');
+      background-position: left top;
+      background-size: contain;
+    }
+
+    @include mobile {
+      &::before, &::after {
+        display: none;
+        background-image: none;
+        width: 0;
+        height: 0;
+      }
+    }
+
   }
   
   form.new_user .field {
