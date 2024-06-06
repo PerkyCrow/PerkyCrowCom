@@ -216,7 +216,6 @@ p, li, h1, h2, h3 {
       border-radius: 0.25em;
       padding: 1em;
       box-sizing: border-box;
-      box-shadow: 2em -2em 2em -2em rgba(42, 52, 60, 0.25);
 
       @include mobile {
         width: 100%;
