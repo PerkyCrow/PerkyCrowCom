@@ -1,0 +1,57 @@
+@import 'mixins';
+
+
+.app {
+  #header {
+    margin-bottom: 2.5em;
+    display: flex;
+    background: rgb(42, 52,60);
+    padding: 0.5em;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    opacity: 0.75;
+    box-shadow: 0 1em 2em -1em rgb(42, 52,60);
+    transition: opacity 0.25s;
+
+    @include mobile {
+      margin-bottom: 1em;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .logo {
+      margin: initial;
+      width: 3em;
+      height: 3em;
+  
+      a {
+        display: inline-block;
+        width: 3em;
+        height: 3em;
+        border-radius: 1.5em;
+        filter: invert(1);
+        cursor: pointer;
+      }
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 1.25em;
+      margin: 0.5em;
+      color: #2e4e54;
+      text-shadow: initial;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        font-size: 1em;
+      }
+    }
+  }
+
+
+}

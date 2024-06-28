@@ -3,5 +3,6 @@
  *= require main
  *= require devise
  *= require flash
+ *= require app
  *= require_self
  */

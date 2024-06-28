@@ -32,7 +32,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="<%= params[:controller].parameterize %> <%= params[:action].parameterize %> <%= @body_class %>">
 
     <%= render "shared/flash" %>
     <%= render "shared/header" %>

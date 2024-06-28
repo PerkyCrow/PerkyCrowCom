@@ -73,6 +73,10 @@ p, li, h1, h2, h3 {
 #header {
   margin-bottom: 5em;
 
+  @include mobile {
+    margin-bottom: 1em;
+  }
+
   .logo {
     margin: 1em auto 0 auto;
     width: 14em;
@@ -106,8 +110,6 @@ p, li, h1, h2, h3 {
   section {
     max-width: 800px;
     margin: 0 auto 3em auto;
-
-
 
     @include mobile {
       width: auto;
