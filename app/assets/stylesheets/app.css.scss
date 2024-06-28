@@ -47,6 +47,10 @@
       display: flex;
       align-items: center;
 
+      strong {
+        padding-left: 0.25em;
+      }
+
       @include mobile {
         font-size: 1em;
       }
