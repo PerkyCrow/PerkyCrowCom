@@ -18,6 +18,10 @@
     position: relative;
     border: 2px solid #2c343b;
 
+    .fields {
+      position: relative;
+    }
+
     &::before,
     &::after {
       content: "";
