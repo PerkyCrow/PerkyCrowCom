@@ -8,6 +8,7 @@
     background: rgb(42, 52,60);
     padding: 0.5em;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     position: sticky;
     opacity: 0.75;
@@ -24,16 +25,24 @@
 
     .logo {
       margin: initial;
-      width: 3em;
-      height: 3em;
-  
+      width: 3.5em;
+      height: 3.5em;
+
       a {
         display: inline-block;
-        width: 3em;
-        height: 3em;
-        border-radius: 1.5em;
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 50%;
         filter: invert(1);
         cursor: pointer;
+        box-sizing: border-box;
+        padding: 0.25em;
+        transition: background 0.25s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.25);
+          cursor: pointer;
+        }
       }
     }
 
