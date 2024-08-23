@@ -1,5 +1,5 @@
 @mixin mobile {
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
       @content;
   }
 }
@@ -12,7 +12,7 @@
   font-weight: bold;
   border: none;
   padding: 0.5em 2em;
-  border-radius: 0.25em;
+  border-radius: 1em;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   font-size: 1em;

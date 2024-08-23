@@ -156,6 +156,10 @@ p, li, h1, h2, h3 {
         margin: 3em auto;
         text-align: center;
 
+        @include mobile {
+          margin: 1em auto;
+        }
+
         img {
           width: 100%;
           box-sizing: border-box;
@@ -168,6 +172,10 @@ p, li, h1, h2, h3 {
         margin: 3em auto;
         text-align: center;
 
+        @include mobile {
+          margin: 1em auto;
+        }
+
         img {
           width: 100%;
           box-sizing: border-box;
@@ -179,17 +187,30 @@ p, li, h1, h2, h3 {
         margin-bottom: 1em;
         font-size: 1.5em;
         text-align: center;
+
+        @include mobile {
+          margin-top: 2em;
+          font-size: 1.25em;
+        }
       }
 
       p {
         line-height: 1.6;
         margin-bottom: 1em;
         padding: 0 2.5em;
+
+        @include mobile {
+          padding: 0 0.5em;
+        }
       }
 
       ul {
         margin-bottom: 1em;
         padding: 0 2.5em;
+
+        @include mobile {
+          padding: 0 0.5em;
+        }
 
         li {
           margin-bottom: 1em;
@@ -200,6 +221,10 @@ p, li, h1, h2, h3 {
       .join_the_alpha {
         text-align: center;
         margin: 3em;
+
+        @include mobile {
+          margin: 3em 1em;
+        }
 
         a {
           @include button;
